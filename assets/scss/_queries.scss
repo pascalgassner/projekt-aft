@@ -1,0 +1,42 @@
+/*Media-Queries*/
+@media (max-width: 721px){
+  #flamingos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #container{
+    grid-column: 1 / 7;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+  }
+
+  #sidebar{
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 376px){
+  #flamingos{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #flamingo_prio1{
+    grid-column: 1/1;
+    grid-row: auto;
+  }
+
+  #flamingo_prio2{
+    grid-column: 1/1;
+    grid-row: auto;
+  }
+
+  #sidebar{
+    flex-direction: column;
+  }
+}

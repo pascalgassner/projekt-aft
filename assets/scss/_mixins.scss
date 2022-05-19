@@ -1,0 +1,8 @@
+@mixin gridlayout ($columns, $rows, $col_gap: 1em, $row_gap: 2em) {
+  display: grid;
+  grid-template-columns: repeat(#{$columns}, 1fr);
+  grid-column-gap: $col_gap;
+  grid-template-rows: repeat(#{$rows}, auto);
+  grid-row-gap: $row_gap;
+
+}
