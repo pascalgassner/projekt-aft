@@ -1,0 +1,21 @@
+/*Design Buttons*/
+.button_weiterlesen{
+  font-family: Architects Daughter, serif;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  border: 1px solid $black;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 0 1em 2em;
+  text-decoration-line: underline;
+}
+
+.button_weiterlesen:hover{
+  background-color: $gray;
+}
+
+.button_anmelden{
+  @extend .button_weiterlesen;
+  margin-left: 1em;
+}
